@@ -294,8 +294,8 @@ def pregunta_08():
     for i in data:
         if i[1] in a:
             a[i[1]].append(i[0])
-    else:
-        a[i[1]]=list(i[0])
+        else:
+            a[i[1]]=list(i[0])
     for i in a:
         b.append(tuple([int(i),sorted(list(set(a[i])))]))
     b=sorted(b)
@@ -347,7 +347,7 @@ def pregunta_09():
     for i in a:
         b.append(tuple([i,a[i]]))
     b=sorted(b)
-    b
+    return b
     """
     Retorne un diccionario que contenga la cantidad de registros en que aparece cada
     clave de la columna 5.
