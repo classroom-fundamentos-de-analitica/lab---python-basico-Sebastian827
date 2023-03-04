@@ -347,7 +347,8 @@ def pregunta_09():
     for i in a:
         b.append(tuple([i,a[i]]))
     b=sorted(b)
-    return b
+    a={elemento[0]: elemento[1] for elemento in b}
+    return a
     """
     Retorne un diccionario que contenga la cantidad de registros en que aparece cada
     clave de la columna 5.
